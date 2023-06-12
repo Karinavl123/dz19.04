@@ -1,0 +1,11 @@
+<h1>Новини</h1>
+
+<ul>
+    {foreach $news as $item}
+        <li>
+            <h2>{$item.title}</h2>
+            <p>{$item.text}</p>
+            <p>Дата створення: {$item.date}</p>
+        </li>
+    {/foreach}
+</ul>
